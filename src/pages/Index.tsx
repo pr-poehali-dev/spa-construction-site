@@ -81,7 +81,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <nav className="fixed top-0 w-full bg-card/80 backdrop-blur-md z-50 border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-primary">СпаСтрой</h1>
+          <h1 className="text-2xl font-bold text-primary">САМИС</h1>
           <div className="hidden md:flex gap-8">
             <a href="#" className="text-foreground hover:text-primary transition-colors">Главная</a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
@@ -93,8 +93,16 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="pt-32 pb-20 px-4">
-        <div className={`container mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/eda34125-77ee-438f-8d09-1ee8ca9671aa/files/cac5a35f-e9dc-423a-9e21-d7754980ad5b.jpg"
+            alt="Баннер"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background"></div>
+        </div>
+        <div className={`container mx-auto text-center relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             Строительство премиальных<br />
             <span className="text-primary">СПА и релакс-пространств</span>
@@ -198,7 +206,7 @@ const Index = () => {
           <div className="mt-16 bg-card rounded-2xl p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-3xl font-bold mb-4">О компании СпаСтрой</h3>
+                <h3 className="text-3xl font-bold mb-4">О компании САМИС</h3>
                 <p className="text-muted-foreground mb-4">
                   Мы специализируемся на проектировании и строительстве премиальных СПА-комплексов, 
                   бань, саун и хаммамов. За 15 лет работы реализовали более 200 успешных проектов 
@@ -287,7 +295,7 @@ const Index = () => {
 
       <footer className="bg-card border-t border-border py-8 px-4">
         <div className="container mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 СпаСтрой. Все права защищены.</p>
+          <p>&copy; 2024 САМИС. Все права защищены.</p>
         </div>
       </footer>
     </div>
