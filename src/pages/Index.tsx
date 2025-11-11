@@ -83,6 +83,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-primary">СпаСтрой</h1>
           <div className="hidden md:flex gap-8">
+            <a href="#" className="text-foreground hover:text-primary transition-colors">Главная</a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
             <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Портфолио</a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">О нас</a>
